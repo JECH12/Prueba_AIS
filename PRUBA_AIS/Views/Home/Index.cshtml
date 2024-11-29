@@ -1,0 +1,10 @@
+﻿<form asp-action="Calculate" method="post">
+    <label for="number">Ingresa un número entero:</label>
+    <input type="number" id="number" name="number" required>
+    <button type="submit">Calcular</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <p style="margin-top: 20px; font-weight: bold;">@ViewBag.Result</p>
+}
