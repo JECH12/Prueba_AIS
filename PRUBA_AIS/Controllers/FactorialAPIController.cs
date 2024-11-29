@@ -41,12 +41,10 @@ namespace PRUBA_AIS.Controllers
                 return BadRequest("Debes proporcionar exactamente 5 números.");
             }
 
-            // Ordenar los números usando el algoritmo de burbuja
             int[] numerosOrdenados = _order.GetOrdererNumbers(numeros);
 
             return Ok(new
             {
-                Original = numeros,
                 Ordenado = numerosOrdenados
             });
         }

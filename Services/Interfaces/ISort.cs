@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Services.Interfaces
 {
-    public  interface IOrder
+    public  interface ISort
     {
-        public int[] GetOrdererNumbers(int[] numbers);
+        public int[] GetSortedNumbers(int[] numbers);
     }
 }
